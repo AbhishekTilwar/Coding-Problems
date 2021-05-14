@@ -3,7 +3,6 @@
 using namespace std;
 
 int main(){
-    //find all the prime no. b/w 10 to 100
     int b;
     cin>>b;
     int i;
