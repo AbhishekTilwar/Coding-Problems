@@ -1,12 +1,11 @@
 #include <iostream>
-#include <iomanip> //for setw
 
 using namespace std;
 int main(){
     int a,b;
-    int op;
+    char op;
 
-    cout<<"1. addition\n"<<"2. Substraction\n"<<"3. Multiplication\n"<<"4. Division\n"<<"Which Operation do you want yo perform:(1-4)";
+    cout<<"1. addition\n"<<"2. Substraction\n"<<"3. Multiplication\n"<<"4. Division\n"<<"Select Operation do you want to perform:(+,-,*,/)";
     cin>>op;
     cout<<"enter 1st No.";
     cin>>a;
@@ -15,27 +14,24 @@ int main(){
 
     switch(op)
     {
-        case 1:
-            cout<<"Result: "<<a+b;
+        case '+':
+            cout<<"Result:"<<a+b;
             break;
 
-        case 2:
+        case '-':
             cout<<"Result:"<<a-b;
             break;
 
-        case 3:
+        case '*':
             cout<<"Result:"<<a*b;
             break;
 
-        case 4:
+        case '/':
             cout<<"Result:"<<a/2;
             break;
 
         default:
             cout<<"Please enter correct operation!!!";
             break;
-    }
-
-    
-
+    }   
 }
