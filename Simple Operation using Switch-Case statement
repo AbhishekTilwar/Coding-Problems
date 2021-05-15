@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip> //for setw
+
+using namespace std;
+int main(){
+    int a,b;
+    int op;
+
+    cout<<"1. addition\n"<<"2. Substraction\n"<<"3. Multiplication\n"<<"4. Division\n"<<"Which Operation do you want yo perform:(1-4)";
+    cin>>op;
+    cout<<"enter 1st No.";
+    cin>>a;
+    cout<<"enter 2nd No.";
+    cin>>b;
+
+    switch(op)
+    {
+        case 1:
+            cout<<"Result: "<<a+b;
+            break;
+
+        case 2:
+            cout<<"Result:"<<a-b;
+            break;
+
+        case 3:
+            cout<<"Result:"<<a*b;
+            break;
+
+        case 4:
+            cout<<"Result:"<<a/2;
+            break;
+
+        default:
+            cout<<"Please enter correct operation!!!";
+            break;
+    }
+
+    
+
+}
