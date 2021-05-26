@@ -1,3 +1,5 @@
+//Program to check if a number is Armstrong or not! 
+// 153= 1^3+5^3+3^3 (cube of digits) 
 #include <iostream>
 #include <cmath>
 using namespace std;
