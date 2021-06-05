@@ -22,7 +22,7 @@ int main(){
     return 0;
 }
 
-// Approach 2
+// Approach 2 (efficient) 
 
 #include <iostream>
 #include <cmath>
