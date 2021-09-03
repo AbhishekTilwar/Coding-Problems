@@ -1,9 +1,8 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main(){
-  int n=1234, reverse=0;
+  int n, reverse=0;
   cin>>n;
 
   while(n>0){
