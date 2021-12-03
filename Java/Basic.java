@@ -12,7 +12,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         
         // String input
-        String name =sc.next();
+        String name=sc.next();
+        //String name1 =sc.nextLine();
         System.out.println(name);
         
         //INT input
