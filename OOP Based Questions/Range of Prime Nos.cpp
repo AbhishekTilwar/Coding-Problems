@@ -1,3 +1,50 @@
+// Efficient Approach using Sieve of Eratosthenes
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+
+int n;
+cin>>n;
+
+vector<bool> arr;
+    //creating a vector of false values
+for (int i = 0; i < n; i++)
+{
+    arr.push_back(true);
+}
+
+    
+for (int i = 2; i*i <= n; i++) //i*i=n is equal to i=sqrt(n)
+{
+    for (int j = 2*i; j <= n; j+=i)
+    {
+           arr[j]=false;
+      
+    }
+    
+    
+}
+
+for (int i = 2; i*i <= n; i++)
+{
+    if(arr[i]==true){
+        cout<<i;
+        cout<<endl;
+    }
+
+}
+
+}
+
+
+
+
+// Normal Approach
+
+
 #include <iostream>
 
 using namespace std;
