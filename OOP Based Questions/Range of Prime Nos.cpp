@@ -1,22 +1,21 @@
 // Efficient Approach using Sieve of Eratosthenes
-
 #include <bits/stdc++.h>
 
 using namespace std;
 
 int main(){
 
-int n;
-cin>>n;
+int n,m;
+cin>>m>>n;
 
+    //creating a vector of true values
 vector<bool> arr;
-    //creating a vector of false values
 for (int i = 0; i < n; i++)
 {
     arr.push_back(true);
 }
 
-    
+    //
 for (int i = 2; i*i <= n; i++) //i*i=n is equal to i=sqrt(n)
 {
     for (int j = 2*i; j <= n; j+=i)
@@ -24,11 +23,10 @@ for (int i = 2; i*i <= n; i++) //i*i=n is equal to i=sqrt(n)
            arr[j]=false;
       
     }
-    
-    
+      
 }
 
-for (int i = 2; i*i <= n; i++)
+for (int i = m; i <= n; i++)
 {
     if(arr[i]==true){
         cout<<i;
@@ -38,7 +36,6 @@ for (int i = 2; i*i <= n; i++)
 }
 
 }
-
 
 
 
