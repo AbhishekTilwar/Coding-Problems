@@ -10,7 +10,7 @@ cin>>m>>n;
 
     //creating a vector of true values
 vector<bool> arr;
-for (int i = 0; i < n; i++)
+for (int i = 0; i <= n; i++)
 {
     arr.push_back(true);
 }
