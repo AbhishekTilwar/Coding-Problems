@@ -1,42 +1,34 @@
 // Efficient Approach using Sieve of Eratosthenes
 #include <bits/stdc++.h>
-
 using namespace std;
 
-int main(){
-
-int n,m;
-cin>>m>>n;
-
-    //creating a vector of true values
-vector<bool> arr;
-for (int i = 0; i <= n; i++)
-{
-    arr.push_back(true);
-}
-
-    //
-for (int i = 2; i*i <= n; i++) //i*i=n is equal to i=sqrt(n)
-{
-    for (int j = 2*i; j <= n; j+=i)
+void sieve(int a, int b){
+    vector<bool> arr(b,true);
+    
+    for(int i=2; i*i<=b; i++) //i*i=n is equal to i=sqrt(n)
     {
-           arr[j]=false;
-      
+        for(int j=2*i; j<b; j+=i){
+            if(arr[i]==true){
+                arr[j]=false;
+            }
+        }
     }
-      
-}
-
-for (int i = m; i <= n; i++)
-{
-    if(arr[i]==true){
-        cout<<i;
-        cout<<endl;
+    
+    for(int i=2; i<=b; i++){
+        if(arr[i]==true)
+        cout<<i<<endl;
     }
-
 }
 
-}
+int main() {
+    // Write C++ code here
+    int a, b;
+    cin>>a>>b;
+    sieve(a,b);
+    
 
+    return 0;
+}
 
 
 // Normal Approach
