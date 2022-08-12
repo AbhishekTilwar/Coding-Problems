@@ -8,20 +8,19 @@ void sieve(int a, int b){
     for(int i=2; i*i<=b; i++) //i*i=n is equal to i=sqrt(n)
     {
         for(int j=2*i; j<b; j+=i){
-            if(arr[i]==true){
+            if(arr[j]==true){
                 arr[j]=false;
             }
         }
     }
     
-    for(int i=2; i<=b; i++){
+    for(int i=2; i<b; i++){
         if(arr[i]==true)
         cout<<i<<endl;
     }
 }
 
 int main() {
-    // Write C++ code here
     int a, b;
     cin>>a>>b;
     sieve(a,b);
